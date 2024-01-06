@@ -1,0 +1,21 @@
+.field{
+    width: 300px;
+    position: relative;
+    margin: 20px;
+  }
+  .field input{
+    width: 100%;
+    line-height: 40px;
+    text-indent: 10px;
+  }
+  .field .glyphicon{
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      font-size: 20px;
+      color: #1c90f3;
+      cursor: pointer;
+  }
+  .field .glyphicon.active{
+    color: #ccc;
+  }

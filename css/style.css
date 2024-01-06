@@ -1,0 +1,203 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+border: none;
+outline: none;
+}
+:root{
+--color-primary: #5271ff;
+--color-text:#444444;
+--color-bg: rgb(236, 236, 236);
+--color-white: white;
+--color-border: lightgray;
+--color-soft: #aaaaaa;
+--color-red: red;
+}
+html{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--color-bg);
+    }
+    .container{
+    max-width: 991px;
+    width: 100%;
+    margin: 0 auto;
+    }
+    h1,h2,h3,h4,h5{
+        color: var(--color-text);
+        font-weight: 600;
+    }
+    p{
+        color: var(--color-soft);
+    }
+    a{
+      color: var(--color-primary);
+    }
+    small{
+        color: var(--color-soft);
+    }
+    img{
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .btn{
+        padding: .6rem 1.4rem;
+        display: inline-block;
+        width: fit-content;
+        cursor: pointer;
+        border-radius: .5rem;
+        font-size: .9rem;
+        font-weight: 500;
+        border: none;
+        transition: .3s ease;
+    }
+    .btn:hover{
+        opacity:.8;
+    }
+        .btn-primary{
+        background: var(--color-primary);
+        color: white;
+    }
+        .btn-red{
+        background: var(--color-red);
+        color: white;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .user img{
+        width: 52px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        transition: .3s ease;
+    }
+    .user img:hover{
+        opacity: .8;
+    }
+    .user h4{
+        color:var(--color-primary) ;
+    }
+
+
+   /*--.... Start Nov Bar.....*/
+nav{
+height: 3.6rem;
+width: 100%;
+position: sticky;
+top: 0;
+z-index: 100;
+display: flex;
+align-items: center;
+background: var(--color-white);
+}
+
+.nav-container {
+width: 96%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 1.1rem;
+}
+.hidden-icon{
+display: none;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+.logo h3 span{
+    color: var(--color-text);
+}
+.nav-search{
+    border: 1px solid var(--color-text);
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav-search input{
+    background: transparent;
+    
+    color: var(--color-primary);
+    }
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    }
+.nav-right button{
+    background: transparent;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    }
+.sun-icon{
+    display: none;
+}
+.sun-icon:hover, .moon-icon:hover{
+    transition: .3s ease;
+}
+.sun-icon:hover, .moon-icon:hover{
+    transform:rotate(360deg);
+}
+  /*...........End Nov Bar.......*/
+
+
+  /*......Start main Section....*/
+
+  main{
+display: grid;
+grid-template-columns: 18% 54% 25%;
+gap: 3%;
+width: 100%;
+  }
+
+/*......Start Left Bar.....*/
+.left-bar{
+background: var(--color-white);
+position: sticky;
+top: 3.6rem;
+height: calc(100vh 3.6rem);
+overflow: auto;
+border-radius: 1rem;
+
+}
+.left-bar::-webkit-scrollbar{
+display: none;
+}
+.left-bar-container{
+width:80%;
+margin: 0 auto;
+}
+.left-bar .menu-item{
+display: flex;
+align-items: center;
+gap: 10px;
+margin: 20px 0;
+}
+.left-bar .menu-item img{
+width: 20%;
+}
+.left-bar .menu-item .mi{
+width: 25%;
+}
+/*.....End Left Bar.......*/
+
+  /*......end main Section....*/
